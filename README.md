@@ -10,3 +10,4 @@ I am following this  [article](https://stackabuse.com/spring-cloud-stream-with-r
 
 * Start the application
 * Make a Get request to this URL: http://localhost:8080/msg/Leo
+* The console should print: "Consuming msg:Hello, Leo!"
