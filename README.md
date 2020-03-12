@@ -9,4 +9,4 @@ I am following this  [article](https://stackabuse.com/spring-cloud-stream-with-r
 ## How to test
 
 * Start the application
-* Make a Get request example: http://localhost:8080/msg/Leo
+* Make a Get request to this URL: http://localhost:8080/msg/Leo
