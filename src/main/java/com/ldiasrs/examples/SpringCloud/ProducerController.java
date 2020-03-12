@@ -12,8 +12,8 @@ public class ProducerController {
 
     private MessageChannel emailChannel;
 
-    public ProducerController(EmailBinding binding) {
-        emailChannel = binding.greetingOut();
+    public ProducerController(EmailChannelBinding binding) {
+        emailChannel = binding.emailPublisher();
     }
 
     @GetMapping("/msg/{name}")

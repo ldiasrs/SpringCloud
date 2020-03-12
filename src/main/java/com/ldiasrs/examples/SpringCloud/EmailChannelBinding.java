@@ -5,13 +5,13 @@ import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.SubscribableChannel;
 
-public interface EmailBinding {
+public interface EmailChannelBinding {
 
     String EMAIL = "emailChannel";
 
     @Output(EMAIL)
-    MessageChannel greetingOut();
+    MessageChannel emailPublisher();
 
     @Input(EMAIL)
-    SubscribableChannel greetingIn();
+    SubscribableChannel emailConsumer();
 }
