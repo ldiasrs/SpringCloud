@@ -1,17 +1,18 @@
 package com.ldiasrs.examples.SpringCloud;
 
-import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;
-import org.springframework.messaging.SubscribableChannel;
 
-public interface EmailChannelBinding {
+public interface EmailChannelBindingPublisher {
 
     String EMAIL = "emailChannel";
+
+    String UNDELIVERABLE = "undeliverableChannel";
 
     @Output(EMAIL)
     MessageChannel emailPublisher();
 
-    @Input(EMAIL)
-    SubscribableChannel emailConsumer();
+    @Output(UNDELIVERABLE)
+    MessageChannel undeliverablePublisher();
+
 }
